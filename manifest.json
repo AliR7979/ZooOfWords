@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "ZooOfWords",
+    "description": "Zoo Of Words, a web extension tool designed to enrich your vocabulary effortlessly by searching the meaning of any word right on your fingertips.",
+    "version": "1.0",
+
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+S",
+                "mac": "MacCtrl+Shift+S"
+            },
+            "description": "Opens the popup window of ZooOfWords"
+        }
+    }
+
+}

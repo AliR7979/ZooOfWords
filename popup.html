@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo Of Words</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="content">
+        <h1>Search Up</h1>
+
+        <div class="dropdown">
+            <div class="dropdown-select" id="dropdown-menu">
+                <span class="placeholder">Instructions </span>
+            </div>
+            <div class="dropdown-list"></div>
+          </div>
+
+        <div class="search">
+            <input type="text" placeholder="Start Typing your Word . . . . ." id="searchbar-element" required spellcheck="false">
+            <i class="bi bi-book"></i>
+        </div>
+        
+        <p class="description" id="description-element"></p>
+        
+        <ul>
+            <li class="word">
+                <div class="sound-icon">
+                    <i class="bi bi-volume-up" id="audio-icon"></i>
+                </div>
+                <div class="entry">
+                    <p id="search-item"></p>
+                    <span></span>
+                </div>
+                <i class="bi bi-bookmark-check" id="save-icon"></i>
+            </li>
+
+            <div class="part-of-speech">
+                <p></p>
+            </div>
+
+            <div class="info">
+
+                <li class="definition">
+                    <div class="details">
+                        <p class="heading">Definition</p>
+                        <span></span>
+                    </div>
+                </li>
+            </div>
+        </ul>
+
+        <div class="buttons">
+            <div class="button" id="previous-button"><i class="bi bi-arrow-left"></i></div >
+            <div class="button enabled" id="next-button"><i class="bi bi-arrow-right"></i></div >
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
